@@ -1,5 +1,5 @@
 var mongoose =require("mongoose");
-mongoose.connect('mongodb://localhost:27017/products', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://test:pass@cluster0.j9jrp.mongodb.net/products?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 var conn=mongoose.connection;
 var productSchema = new mongoose.Schema({
     product_name: String,
